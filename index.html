@@ -1,0 +1,601 @@
+        .product-price .old {
+            color: #555;
+            text-decoration: line-through;
+            font-size: 0.9rem;
+        }
+
+        .product-price .new {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #f7c948;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            background: linear-gradient(135deg, #ff6b35, #e85d2c);
+            color: #fff;
+            border: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .add-to-cart:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        /* PARALLAX BRANDS */
+        #brands-parallax .parallax-bg {
+            background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1920&q=80');
+        }
+
+        #brands-parallax .parallax-overlay {
+            background: rgba(10,10,10,0.75);
+        }
+
+        .brands-content {
+            z-index: 2;
+            text-align: center;
+        }
+
+        .brands-content h2 {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .brand-logos {
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .brand-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.3);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .brand-logo:hover {
+            color: #fff;
+        }
+
+        /* TESTIMONIALS */
+        #testimonials {
+            background: #0a0a0a;
+            padding: 120px 60px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(145deg, #141414, #1a1a1a);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 20px;
+            padding: 36px;
+        }
+
+        .stars {
+            color: #f7c948;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-text {
+            color: #ccc;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff6b35, #f7c948);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .author-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .author-title {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        /* CTA SECTION */
+        #cta {
+            position: relative;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #cta .parallax-bg {
+            background-image: url('https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=1920&q=80');
+        }
+
+        #cta .parallax-overlay {
+            background: linear-gradient(135deg, rgba(255,107,53,0.8), rgba(247,201,72,0.6));
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 16px;
+        }
+
+        .cta-content p {
+            font-size: 1.1rem;
+            margin-bottom: 32px;
+            opacity: 0.9;
+        }
+
+        .cta-btn {
+            background: #fff;
+            color: #ff6b35;
+            border: none;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0d0d0d;
+            padding: 80px 60px 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+        }
+
+        .footer-about .logo {
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .footer-about p {
+            color: #666;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        .footer-col h4 {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ff6b35;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding-top: 30px;
+            text-align: center;
+            color: #444;
+            font-size: 0.8rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* SCROLL ANIMATIONS */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav {
+                padding: 16px 24px;
+            }
+
+            nav.scrolled {
+                padding: 12px 24px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            #features, #products, #testimonials {
+                padding: 80px 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            footer {
+                padding: 60px 24px 20px;
+            }
+
+            .brand-logos {
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="logo">SNEAKERVAULT</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Trang chủ</a></li>
+            <li><a href="#products">Sản phẩm</a></li>
+            <li><a href="#features">Đặc điểm</a></li>
+            <li><a href="#testimonials">Đánh giá</a></li>
+            <li><a href="#cta">Liên hệ</a></li>
+        </ul>
+        <div class="nav-cart">
+            🛒
+            <span class="badge">3</span>
+        </div>
+    </nav>
+
+    <!-- HERO PARALLAX -->
+    <section class="parallax-section" id="hero">
+        <div class="parallax-bg" data-speed="0.3"></div>
+        <div class="parallax-overlay"></div>
+        <div class="floating-shoe">👟</div>
+        <div class="parallax-content">
+            <div class="hero-tag">Bộ sưu tập 2025</div>
+            <h1 class="hero-title">Bước Bước <span>Cùng<br>Phong Cách</span></h1>
+            <p class="hero-sub">Khám phá bộ sưu tập giày thể thao cao cấp hàng đầu thế giới. Thoải mái - Phong cách - Cá tính.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn-primary">Mua ngay</a>
+                <a href="#features" class="btn-outline">Khám phá</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+        <p class="section-label reveal">Tại sao chọn chúng tôi</p>
+        <h2 class="section-title reveal">Trải nghiệm khác biệt</h2>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">🚀</div>
+                <h3>Giao hàng siêu tốc</h3>
+                <p>Giao hàng toàn quốc trong 24h. Miễn phí vận chuyển cho đơn hàng từ 500K.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">✅</div>
+                <h3>100% chính hãng</h3>
+                <p>Cam kết sản phẩm chính hãng, hoàn tiền 200% nếu phát hiện hàng giả.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🔄</div>
+                <h3>Đổi trả dễ dàng</h3>
+                <p>Đổi trả trong 30 ngày nếu không vừa ý. Thủ tục đơn giản, nhanh chóng.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">💎</div>
+                <h3>Thành viên VIP</h3>
+                <p>Tích điểm đổi quà, giảm giá độc quyền và nhận quà sinh nhật mỗi năm.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MID PARALLAX -->
+    <section id="mid-parallax">
+        <div class="parallax-bg" data-speed="0.4"></div>
+        <div class="parallax-overlay"></div>
+        <div class="mid-content reveal">
+            <h2>Phong cách của bạn<br><span>Bắt đầu từ đôi chân</span></h2>
+            <p>Hơn 10,000+ khách hàng hài lòng đã tin chọn SneakerVault</p>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+        <p class="section-label reveal">Sản phẩm bán chạy</p>
+        <h2 class="section-title reveal">Hot Deals tháng này</h2>
+        <div class="products-grid">
+            <div class="product-card reveal">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80')">
+                    <span class="product-badge">-30%</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Nike</p>
+                    <h3 class="product-name">Air Max 270 React</h3>
+                    <div class="product-price">
+                        <span class="old">4.200.000đ</span>
+                        <span class="new">2.940.000đ</span>
+                    </div>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=600&q=80')">
+                    <span class="product-badge">Mới</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">Adidas</p>
+                    <h3 class="product-name">Ultraboost 23 Light</h3>
+                    <div class="product-price">
+                        <span class="old">5.100.000đ</span>
+                        <span class="new">4.335.000đ</span>
+                    </div>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1556906781-9a412961c28c?w=600&q=80')">
+                    <span class="product-badge">-20%</span>
+                </div>
+                <div class="product-info">
+                    <p class="product-brand">New Balance</p>
+                    <h3 class="product-name">574 Classic Core</h3>
+                    <div class="product-price">
+                        <span class="old">3.200.000đ</span>
+                        <span class="new">2.560.000đ</span>
+                    </div>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANDS PARALLAX -->
+    <section id="brands-parallax" class="parallax-section">
+        <div class="parallax-bg" data-speed="0.35"></div>
+        <div class="parallax-overlay"></div>
+        <div class="brands-content reveal">
+            <h2>Đối tác thương hiệu</h2>
+            <div class="brand-logos">
+                <span class="brand-logo">Nike</span>
+                <span class="brand-logo">Adidas</span>
+                <span class="brand-logo">Puma</span>
+                <span class="brand-logo">New Balance</span>
+                <span class="brand-logo">Reebok</span>
+                <span class="brand-logo">Converse</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <p class="section-label reveal">Đánh giá khách hàng</p>
+        <h2 class="section-title reveal">Khách hàng nói gì về chúng tôi</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Giày chính hãng, đóng gói cẩn thận, giao hàng nhanh chưa từng có. Mình sẽ còn quay lại很多次!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">T</div>
+                    <div>
+                        <div class="author-name">Minh Tuấn</div>
+                        <div class="author-title">Customer VIP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Dịch vụ chăm sóc khách hàng tuyệt vời. Đổi size miễn phí, nhân viên thân thiện và nhiệt tình."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">H</div>
+                    <div>
+                        <div class="author-name">Thanh Hà</div>
+                        <div class="author-title">Fashion Blogger</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Giá tốt nhất thị trường, nhiều chương trình khuyến mãi hấp dẫn. SneakerVault là địa chỉ đáng tin!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">L</div>
+                    <div>
+                        <div class="author-name">Hoàng Long</div>
+                        <div class="author-title">Athlete</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA PARALLAX -->
+    <section id="cta">
+        <div class="parallax-bg" data-speed="0.3"></div>
+        <div class="parallax-overlay"></div>
+        <div class="cta-content reveal">
+            <h2>Sẵn sàng nâng cấp phong cách?</h2>
+            <p>Đăng ký nhận tin để không bỏ lỡ các deal hời độc quyền</p>
+            <a href="#" class="cta-btn">Đăng ký ngay</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-about">
+                <span class="logo">SNEAKERVAULT</span>
+                <p>Chuyên cung cấp giày thể thao chính hãng hàng đầu Việt Nam. Chất lượng - Uy tín - Giá tốt.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Danh mục</h4>
+                <ul>
+                    <li><a href="#">Giày Nike</a></li>
+                    <li><a href="#">Giày Adidas</a></li>
+                    <li><a href="#">Giày New Balance</a></li>
+                    <li><a href="#">Giày Puma</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="#">Hướng dẫn chọn size</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#"> Giao hàng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li><a href="#">Hotline: 1900 xxxx</a></li>
+                    <li><a href="#">Email: hello@sneakervault.vn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SneakerVault. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Parallax on scroll
+        const parallaxBgs = document.querySelectorAll('.parallax-bg');
+
+        function updateParallax() {
+            const scrollY = window.pageYOffset;
+
+            parallaxBgs.forEach(bg => {
+                const section = bg.parentElement;
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+
+                if (scrollY + window.innerHeight > sectionTop && scrollY < sectionTop + sectionHeight) {
+                    const speed = parseFloat(bg.dataset.speed) || 0.3;
+                    const yPos = -(scrollY - sectionTop) * speed;
+                    bg.style.transform = `translate3d(0, ${yPos}px, 0)`;
+                }
+            });
+        }
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+
+        function revealOnScroll() {
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const revealPoint = 120;
+
+                if (elementTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+
+        function updateNavbar() {
+            if (window.pageYOffset > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        // Mouse parallax for hero
+        const hero = document.getElementById('hero');
+        const floatingShoe = hero.querySelector('.floating-shoe');
+
+        hero.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 30;
+            const y = (e.clientY / window.innerHeight - 0.5) * 30;
+            floatingShoe.style.transform = `translate(${x}px, ${y}px) rotate(-20deg)`;
+        });
+
+        window.addEventListener('scroll', () => {
+            updateParallax();
+            revealOnScroll();
+            updateNavbar();
+        }, { passive: true });
+
+        window.addEventListener('load', () => {
+            updateParallax();
+            revealOnScroll();
+        });
+    </script>
+
+</body>
+</html>
