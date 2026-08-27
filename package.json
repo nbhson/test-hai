@@ -1,32 +1,25 @@
 {
-  "name": "toeic-app",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
-  },
+  "name": "toeic-container",
+  "version": "1.0.0",
   "private": true,
-  "packageManager": "npm@11.16.0",
-  "dependencies": {
-    "@angular/common": "^22.0.0",
-    "@angular/compiler": "^22.0.0",
-    "@angular/core": "^22.0.0",
-    "@angular/forms": "^22.0.0",
-    "@angular/platform-browser": "^22.0.0",
-    "@angular/router": "^22.0.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+  "description": "Monorepo cho TOEIC Reading App — Backend + Frontend",
+  "workspaces": [
+    "toeic-reading-be",
+    "toeic-reading-ui"
+  ],
+  "scripts": {
+    "dev:be": "npm run dev --workspace=toeic-reading-be",
+    "dev:ui": "npm run start --workspace=toeic-reading-ui",
+    "dev": "concurrently \"npm run dev:be\" \"npm run dev:ui\"",
+    "build:be": "npm run build --workspace=toeic-reading-be",
+    "build:ui": "npm run build --workspace=toeic-reading-ui",
+    "build": "npm run build --workspaces",
+    "test:be": "npm run test --workspace=toeic-reading-be",
+    "test:ui": "npm run test --workspace=toeic-reading-ui",
+    "test": "npm run test --workspaces",
+    "install:all": "npm install"
   },
   "devDependencies": {
-    "@angular/build": "^22.0.4",
-    "@angular/cli": "^22.0.4",
-    "@angular/compiler-cli": "^22.0.0",
-    "jsdom": "^28.0.0",
-    "prettier": "^3.8.1",
-    "typescript": "~6.0.2",
-    "vitest": "^4.0.8"
+    "concurrently": "^9.1.0"
   }
 }
